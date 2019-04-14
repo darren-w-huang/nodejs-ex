@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <def.hacks.even.better.HeaderView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/consoli"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/credit_consolidation"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toStartOf="@+id/studentLoan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/home_improvement"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/purchase"
+        app:layout_constraintEnd_toStartOf="@+id/moving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consoli" />
+
+    <Button
+        android:id="@+id/purchase"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/large_purchase"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/wedding"
+        app:layout_constraintEnd_toStartOf="@+id/boat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home" />
+
+    <Button
+        android:id="@+id/wedding"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/wedding"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/auto"
+        app:layout_constraintEnd_toStartOf="@+id/taxes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purchase" />
+
+    <Button
+        android:id="@+id/auto"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/auto"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/house_exp"
+        app:layout_constraintEnd_toStartOf="@+id/Vacation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wedding" />
+
+    <Button
+        android:id="@+id/house_exp"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/household_expenses"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/health"
+        app:layout_constraintEnd_toStartOf="@+id/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto" />
+
+    <Button
+        android:id="@+id/health"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/health"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/other"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/house_exp" />
+
+    <Button
+        android:id="@+id/studentLoan"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/student_loan"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/moving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/consoli"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/moving"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/moving"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/boat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toBottomOf="@+id/studentLoan" />
+
+    <Button
+        android:id="@+id/boat"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/boat"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/taxes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/purchase"
+        app:layout_constraintTop_toBottomOf="@+id/moving" />
+
+    <Button
+        android:id="@+id/taxes"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/taxes"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Vacation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wedding"
+        app:layout_constraintTop_toBottomOf="@+id/boat" />
+
+    <Button
+        android:id="@+id/Vacation"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/vacation"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/auto"
+        app:layout_constraintTop_toBottomOf="@+id/taxes" />
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/other"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/health"
+        app:layout_constraintTop_toBottomOf="@+id/green" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="@dimen/type_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundshapebtn"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="@string/green"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/house_exp"
+        app:layout_constraintTop_toBottomOf="@+id/Vacation" />
+
+
+</android.support.constraint.ConstraintLayout>
